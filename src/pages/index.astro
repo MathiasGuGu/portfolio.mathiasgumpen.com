@@ -1,0 +1,28 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <!-- <Footer /> -->
+      <h1>Header 1</h1>
+      <h2>Header 2</h2>
+      <h3>Header 3</h3>
+      <h4>Header 4</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
+        temporibus numquam blanditiis eveniet sequi fugiat accusantium modi
+        velit harum? Officia unde inventore architecto distinctio dolore?
+      </p>
+    </main>
+  </body>
+</html>

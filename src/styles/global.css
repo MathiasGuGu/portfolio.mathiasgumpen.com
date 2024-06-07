@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text: hsl(0, 1%, 17%);
+  --background: hsl(180, 6%, 97%);
+  --primary: hsl(121, 66%, 61%);
+  --secondary: hsl(45, 24%, 72%);
+  --accent: hsl(0, 71%, 61%);
+  --shadow-3: 5px 5px 23px 0px rgba(0, 0, 0, 0.05),
+    6px 6px 23px 0px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-2: 5px 5px 11px -4px rgba(0, 0, 0, 0.1),
+    15px 15px 50px 0px rgba(0, 0, 0, 0.1);
+  --shadow-1: 5px 5px 11px -4px rgba(0, 0, 0, 0.1);
+
+  --small: 0.75rem;
+  --base: 1rem;
+  --xl: 1.333rem;
+  --2xl: 1.777rem;
+  --3xl: 2.369rem;
+  --4xl: 3.158rem;
+  --5xl: 4.21rem;
+}
+
+html,
+body {
+  background-color: var(--background);
+}
+
+main,
+.main {
+  width: 1100px;
+  max-width: calc(100% - 2rem);
+  margin: auto;
+}
+
+p,
+nav {
+  font-family: "Figtree Variable", sans-serif;
+  font-weight: 400;
+  font-size: var(--base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Sora Variable", sans-serif;
+  font-weight: 700;
+  padding: 0 0 0.3rem 0;
+}
+
+h1 {
+  font-size: var(--5xl);
+}
+
+h2 {
+  font-size: var(--4xl);
+}
+
+h3 {
+  font-size: var(--3xl);
+}
+
+h4 {
+  font-size: var(--2xl);
+}
+
+h5 {
+  font-size: var(--xl);
+}
