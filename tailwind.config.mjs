@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         text: "var(--text)",
+        textSecondary: "var(--text-secondary)",
         background: "var(--background)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
@@ -26,8 +27,8 @@ export default {
       1: "var(--shadow-1)",
     },
     fontFamily: {
-      heading: "Sora",
-      body: "Figtree",
+      heading: "var(--font-heading)",
+      body: "var(--font-body)",
     },
     fontWeight: {
       normal: "400",
