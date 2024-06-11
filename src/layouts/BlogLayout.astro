@@ -1,0 +1,17 @@
+---
+import BlogHead from "../components/BlogHead.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BlogHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <main transition:animate="fade" class="w-[50vw] pt-24">
+      <slot />
+    </main>
+    <style></style>
+  </body>
+</html>

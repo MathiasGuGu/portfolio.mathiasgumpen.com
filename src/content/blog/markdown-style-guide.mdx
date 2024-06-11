@@ -1,0 +1,73 @@
+---
+title: "Markdown Style Sheet"
+description: "What do we do about Markdown Styling?"
+pubDate: "11 06 24"
+heroImage: "/blog-placeholder-1.jpg"
+---
+
+import BlogLayout from "../../layouts/BlogLayout.astro";
+
+<BlogLayout>
+# Markdown Style Sheet
+
+Writing a blog with markdown can be fun. It is easy, reliable and honestly a pretty good learning experience.
+But now we need styling, because without good styling no one will read it, right?
+
+#### First off, Headers
+
+Headers are locking points. It is what a user reads first when they scroll and ultimately decides if they are interested.
+So, make sure your headers are big, bold and beautiful.
+
+# This is a H1
+
+## This is a H2
+
+### This is a H3
+
+#### This is a H4
+
+##### This is a H5
+
+What more do we need? we have titles and we have text, so we are good right? No, there is so much more.
+Lets have a look at Code blocks
+
+#### Code Blocks
+
+Code blocks are a good way to show code snippets. It is important to have a good style for code blocks.
+Here is an example of a code block showcasing a simple function in JavaScript.
+
+```javascript
+function add(a, b) {
+  return a + b; // [!code --]
+}
+```
+
+Syntax highlighting depends on the language you use for your code block.
+In this example were using Javascript so we get relevant highlighting on keywords.
+
+you can specify the language by adding the language name after the three backticks.
+For example, to specify the language as JavaScript, you would write ```javascript.
+
+You can also use other languages like CSS, HTML, Python, bash, etc.
+
+now we have to be good right? NO!
+
+#### Lists
+
+Lists are a good way to show a list of items. It can be ordered or unordered.
+Here is an example of an unordered list.
+
+- Item 1
+- Item 2
+
+Here is an example of an ordered list.
+
+1. Item 1
+2. Item 2
+3. Item 3
+
+#### Links
+
+Links are a good way to link to other pages or websites. Here is an example of a link to the [Astro website](https://astro.build/).
+
+</BlogLayout>

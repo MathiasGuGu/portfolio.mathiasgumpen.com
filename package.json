@@ -23,5 +23,8 @@
     "tailwind-merge": "^2.3.0",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@shikijs/transformers": "^1.6.4"
   }
 }

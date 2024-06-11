@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import HeroLines from "../components/HeroLines.astro";
 import TechstackIllu from "../components/TechstackIllu.astro";
 import ProjectList from "../components/Projects/ProjectList.astro";
+import BlogList from "../components/Blog/BlogList.astro";
 ---
 
 <MainLayout>
@@ -44,10 +45,7 @@ import ProjectList from "../components/Projects/ProjectList.astro";
       <span class="h-64 w-[1px] bg-text block"></span>
     </div>
   </section>
-  <section
-    class="pt-20 h-auto relative isolate scroll bg-background"
-    data-speed="1.5"
-  >
+  <section class="pt-20 h-auto relative isolate bg-background">
     <div
       class="absolute -bottom-56 md:left-[500px] -z-10 max-w-[calc(100%-4rem)]"
     >
@@ -60,13 +58,26 @@ import ProjectList from "../components/Projects/ProjectList.astro";
       Frontend Guru
       <span class="text-green-500">.</span>
     </h2>
+    <p class="text-xl font-heading text-text">&copy; About me</p>
+
     <p class="limit-w">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit adipisci
-      cupiditate quaerat quos quis corporis nemo. Ducimus cumque facilis rerum
-      error dolorem eius accusamus, eos fugiat repellendus quia, qui voluptatum
-      iure laboriosam, consequatur laborum minima repudiandae excepturi!
-      Pariatur obcaecati neque temporibus dolorum eos facere, repellat sequi
-      dolor consequuntur natus laboriosam.
+      I am a 22 year old Software developer / Frontend developer from
+      Kristiansand, Norway. I have a Higher Professional Degree in Frontend
+      development and will be interning at Norkart in the summer of 2024. I have
+      <span class="font-bold text-text">4+ years</span> of experience with web-development
+      and have worked on many projects, both personal and professional. I am an eager
+      and fast learner and I am always looking for new challenges.
+    </p>
+    <p class="text-xl font-heading text-text">&copy; Tech</p>
+    <p class="limit-w">
+      While I have experience in many technologies and tools, I am most
+      comfortable with <span class="font-bold text-text">React</span> , <span
+        class="font-bold text-text">TailwindCss</span
+      >
+      and <span class="font-bold text-text">Typescript</span> . I am proficient in
+      Python but choose to work with Typescript for most projects. Although most
+      of my experience is in React and Typescript/Javascript, I am a fast learner
+      and have made projects in multiple frameworks like Vue, Solid and Svelte.
     </p>
   </section>
 
@@ -79,5 +90,9 @@ import ProjectList from "../components/Projects/ProjectList.astro";
       I have a lot of ideas, and I love to create things.
     </p>
     <ProjectList />
+  </section>
+
+  <section>
+    <BlogList />
   </section>
 </MainLayout>
