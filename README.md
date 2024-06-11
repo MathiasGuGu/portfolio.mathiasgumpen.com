@@ -4,8 +4,8 @@
 
 This projects is built with:
 
-- [React.js](https://reactjs.org/)
-- [TailwindCss](https://getbootstrap.com)
+- [AstroJs](https://astro.build/)
+- [TailwindCss](https://tailwindcss.com)
 
 Using astro with some of the addons astro offers, can provide amazing page speed and also good SEO.
 TailwindCss is used for styling together with some global css files to keep the project DRY.
