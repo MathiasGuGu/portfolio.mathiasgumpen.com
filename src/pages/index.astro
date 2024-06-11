@@ -1,28 +1,97 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import MainLayout from "../layouts/MainLayout.astro";
+import HeroLines from "../components/HeroLines.astro";
+import ProjectList from "../components/Projects/ProjectList.astro";
+import BlogList from "../components/Blog/BlogList.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
-    <main>
-      <!-- <Footer /> -->
-      <h1>Header 1</h1>
-      <h2>Header 2</h2>
-      <h3>Header 3</h3>
-      <h4>Header 4</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-        temporibus numquam blanditiis eveniet sequi fugiat accusantium modi
-        velit harum? Officia unde inventore architecto distinctio dolore?
-      </p>
-    </main>
-  </body>
-</html>
+<MainLayout>
+  <!-- <Footer /> -->
+  <section
+    class="pt-[200px] flex flex-col justify-center relative isolate text-balance"
+  >
+    <div
+      class="absolute top-[50px] md:top-[150px] md:left-[500px] -z-10 max-w-[calc(100%-4rem)]"
+    >
+      <HeroLines color="#22c55e" />
+    </div>
+    <h1 class="font-normal">
+      Hi, my name is <span class="font-bold">Mathias</span><span
+        class="text-orange-500">.</span
+      >
+    </h1>
+    <p class="limit-w">
+      I am a software engineer / frontend developer with a passion for
+      performance, accessibility, and user experience.
+    </p>
+    <p class="text-balance">
+      currently working as a software developer at
+      <a
+        href="https://norkart.no"
+        target="_blank"
+        aria-label="Link to Norkart's website"
+        rel="noreferer noopener"
+        class="underline underline-offset-4 decoration-green-500"
+      >
+        Norkart
+        <span class="text-green-500 font-bold font-heading">.</span>
+      </a>
+    </p>
+    <div
+      class="h-auto w-24 flex flex-col gap-4 opacity-40 items-center justify-center pt-12"
+    >
+      <p>scroll</p>
+      <span class="h-64 w-[1px] bg-text block"></span>
+    </div>
+  </section>
+  <section class="pt-20 h-auto relative isolate bg-background">
+    <div
+      class="absolute -bottom-56 md:left-[500px] -z-10 max-w-[calc(100%-4rem)]"
+    >
+      <div
+        class="w-[min(600px,calc(100vw_-_2rem))] h-[364px] bg-orange-200/20 rounded hidden md:block"
+      >
+      </div>
+    </div>
+    <h2>
+      Frontend Guru
+      <span class="text-green-500">.</span>
+    </h2>
+    <p class="text-xl font-heading text-text">&copy; About me</p>
+
+    <p class="limit-w">
+      I am a 22 year old Software developer / Frontend developer from
+      Kristiansand, Norway. I have a Higher Professional Degree in Frontend
+      development and will be interning at Norkart in the summer of 2024. I have
+      <span class="font-bold text-text">4+ years</span> of experience with web-development
+      and have worked on many projects, both personal and professional. I am an eager
+      and fast learner and I am always looking for new challenges.
+    </p>
+    <p class="text-xl font-heading text-text">&copy; Tech</p>
+    <p class="limit-w">
+      While I have experience in many technologies and tools, I am most
+      comfortable with <span class="font-bold text-text">React</span> , <span
+        class="font-bold text-text">TailwindCss</span
+      >
+      and <span class="font-bold text-text">Typescript</span> . I am proficient in
+      Python but choose to work with Typescript for most projects. Although most
+      of my experience is in React and Typescript/Javascript, I am a fast learner
+      and have made projects in multiple frameworks like Vue, Solid and Svelte.
+    </p>
+  </section>
+
+  <section class="pt-20 mt-64">
+    <h3>
+      Projects I have done
+      <span class="text-blue-500">.</span>
+    </h3>
+    <p class="max-w-[min(650px,calc(100%_-_2rem))]">
+      I have a lot of ideas, and I love to create things.
+    </p>
+    <ProjectList />
+  </section>
+
+  <section>
+    <BlogList />
+  </section>
+</MainLayout>

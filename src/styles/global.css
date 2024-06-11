@@ -1,9 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+100: '#14141f',
+   300: '#3b3b5e',
+   400: '#4f4f7d',
+   500: '#62629d',
+*/
 
 :root {
   --text: hsl(0, 1%, 17%);
+  --text-secondary: #4f4f7d;
   --background: hsl(180, 6%, 97%);
   --primary: hsl(121, 66%, 61%);
   --secondary: hsl(45, 24%, 72%);
@@ -21,11 +28,18 @@
   --3xl: 2.369rem;
   --4xl: 3.158rem;
   --5xl: 4.21rem;
+
+  --font-heading: "Sora Variable", sans-serif;
+  --font-body: "Figtree Variable", sans-serif;
 }
 
 html,
 body {
   background-color: var(--background);
+}
+
+header {
+  max-width: 100vw;
 }
 
 main,
@@ -35,11 +49,20 @@ main,
   margin: auto;
 }
 
+.limit-w {
+  max-width: min(600px, calc(100% - 2rem));
+}
+
 p,
 nav {
   font-family: "Figtree Variable", sans-serif;
   font-weight: 400;
   font-size: var(--base);
+  color: var(--text-secondary);
+}
+
+nav {
+  color: var(--text);
 }
 
 h1,
@@ -50,6 +73,15 @@ h5 {
   font-family: "Sora Variable", sans-serif;
   font-weight: 700;
   padding: 0 0 0.3rem 0;
+  line-height: 1.2;
+  width: 650px;
+  max-width: min(600px, calc(100% - 2rem));
+  margin: 0 0 0.2rem 0;
+}
+
+p {
+  margin: 0 0 0.5rem 0;
+  font-size: var(--base);
 }
 
 h1 {

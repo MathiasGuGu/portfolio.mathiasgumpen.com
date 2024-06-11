@@ -1,0 +1,12 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+import topProjects from "./ProjectData";
+---
+
+<section class="space-y-5 pt-12">
+  {
+    topProjects.map((project: any, index: any) => {
+      return <ProjectCard {...project} key={index} />;
+    })
+  }
+</section>
