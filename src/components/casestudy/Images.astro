@@ -1,5 +1,6 @@
 ---
 import { Picture } from "astro:assets";
+const { desk1, desk2, mobile } = Astro.props;
 ---
 
 <section
@@ -9,36 +10,39 @@ import { Picture } from "astro:assets";
     class="w-full h-full col-span-2 row-span-1 p-2 md:p-12 rounded bg-green-500/10"
   >
     <Picture
-      width={500}
-      height={500}
+      width={2880}
+      height={1720}
+      loading={"lazy"}
       format="webp"
       class="w-full h-full object-contain"
-      src="/holidazefrontpage.png"
-      alt="Image 1"
+      src={desk1}
+      alt="Desktop screenshot"
     />
   </div>
   <div
     class="w-full h-full col-span-1 row-span-1 p-2 md:p-12 rounded bg-green-500/10"
   >
     <Picture
-      width={500}
-      height={500}
+      width={2880}
+      height={1720}
+      loading={"lazy"}
       format="webp"
       class="w-full h-full object-contain"
-      src="/holidazeexplore.png"
-      alt="Image 1"
+      src={desk2}
+      alt="Desktop screenshot of 2nd page"
     />
   </div>
   <div
     class="w-full h-full col-span-1 row-span-1 p-2 md:p-12 rounded bg-green-500/10"
   >
     <Picture
-      width={500}
-      height={500}
+      width={720}
+      height={1486}
       format="webp"
+      loading={"lazy"}
       class="w-full h-full object-contain"
-      src="/Holidazemobile.png"
-      alt="Image 1"
+      src={mobile}
+      alt="Mobile screenshot of front page"
     />
   </div>
 </section>

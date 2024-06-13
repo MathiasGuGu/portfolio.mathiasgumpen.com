@@ -24,26 +24,33 @@ const { Content } = await data.render();
 
 <MainLayout>
   <div
-    class="w-full h-96 bg-green-500/10 rounded p-12 gap-4 flex items-center justify-center relative"
+    class="w-full h-[550px] bg-green-500/10 rounded p-12 gap-4 flex items-center justify-center relative"
   >
-    <Picture
-      width={600}
-      height={600}
-      format="webp"
-      src={data.data.image}
-      alt={data.data.title}
-      class="rounded"
-    />
-    <Picture
-      width={188}
-      height={300}
-      format="webp"
-      src="/Holidazemobile.png"
-      alt={data.data.title}
-      class="rounded"
-    />
+    <div class="w-full h-full">
+      <Picture
+        width={2871}
+        loading={"eager"}
+        height={1771}
+        format="webp"
+        src={data.data.image}
+        alt={data.data.title + "desktop screenshot"}
+        class="rounded w-full h-full object-contain"
+      />
+    </div>
+    <div class="w-1/4 h-full">
+      <Picture
+        width={780}
+        loading={"eager"}
+        height={1486}
+        format="webp"
+        src={data.data.imageMobile}
+        alt={data.data.title + "mobile screenshot"}
+        class="rounded"
+      />
+    </div>
+
     <div
-      class="absolute bottom-6 right-6 flex items-center gap-8 bg-white px-5 py-2 rounded-lg"
+      class="absolute bottom-12 right-12 flex items-center gap-8 bg-white px-5 py-2 rounded-lg"
     >
       <a href={data.data.liveDemo}>View live</a>
       <a href={data.data.githubRepo}>Github</a>
