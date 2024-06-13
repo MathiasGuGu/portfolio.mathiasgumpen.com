@@ -21,7 +21,7 @@ export default [
       "Holidaze is a booking app that allows users to book hotels and accommodations for their holidays.",
     image: "/blog-placeholder-2.jpg",
     imageAlt: "Project 1",
-    link: "https://www.google.com",
+    link: "/projects/holidaze",
   },
   {
     title: "FinnJobb - Job Search App",
