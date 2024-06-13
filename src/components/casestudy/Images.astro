@@ -1,0 +1,44 @@
+---
+import { Picture } from "astro:assets";
+---
+
+<section
+  class="w-full h-[500px] md:h-[1000px] grid grid-cols-2 grid-rows-2 gap-3"
+>
+  <div
+    class="w-full h-full col-span-2 row-span-1 p-2 md:p-12 rounded bg-green-500/10"
+  >
+    <Picture
+      width={500}
+      height={500}
+      format="webp"
+      class="w-full h-full object-contain"
+      src="/public/holidazefrontpage.png"
+      alt="Image 1"
+    />
+  </div>
+  <div
+    class="w-full h-full col-span-1 row-span-1 p-2 md:p-12 rounded bg-green-500/10"
+  >
+    <Picture
+      width={500}
+      height={500}
+      format="webp"
+      class="w-full h-full object-contain"
+      src="/public/ holidazeexplore.png"
+      alt="Image 1"
+    />
+  </div>
+  <div
+    class="w-full h-full col-span-1 row-span-1 p-2 md:p-12 rounded bg-green-500/10"
+  >
+    <Picture
+      width={500}
+      height={500}
+      format="webp"
+      class="w-full h-full object-contain"
+      src="/public/Holidazemobile.png"
+      alt="Image 1"
+    />
+  </div>
+</section>

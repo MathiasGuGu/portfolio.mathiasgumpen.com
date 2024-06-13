@@ -1,0 +1,13 @@
+---
+const { name, description } = Astro.props;
+---
+
+<section class="flex flex-col w-full py-6 border-b">
+  <h1>
+    {name}
+    <span class="font-title text-green-500">.</span>
+  </h1>
+  <p>
+    {description}
+  </p>
+</section>
