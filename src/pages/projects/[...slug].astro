@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/MainLayout.astro";
 import Listitem from "../../components/casestudy/Listitem.astro";
 import { getImage } from "astro:assets";
+export const prerender = true;
 export const getStaticPaths = (async () => {
   const studies = await getCollection("projects");
   return studies.map((study) => {
