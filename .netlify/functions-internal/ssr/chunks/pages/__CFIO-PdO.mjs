@@ -188,7 +188,7 @@ createCollectionToGlobResultMap({
 });
 
 let lookupMap = {};
-lookupMap = {"blog":{"type":"content","entries":{"markdown-style-guide":"/src/content/blog/markdown-style-guide.mdx"}},"projects":{"type":"content","entries":{"holidaze":"/src/content/projects/holidaze.mdx","tasktracker":"/src/content/projects/Tasktracker.mdx","ecom":"/src/content/projects/ecom.mdx"}}};
+lookupMap = {"projects":{"type":"content","entries":{"tasktracker":"/src/content/projects/Tasktracker.mdx","ecom":"/src/content/projects/ecom.mdx","holidaze":"/src/content/projects/holidaze.mdx"}},"blog":{"type":"content","entries":{"markdown-style-guide":"/src/content/blog/markdown-style-guide.mdx"}}};
 
 function createGlobLookup(glob) {
 	return async (collection, lookupId) => {
@@ -199,7 +199,7 @@ function createGlobLookup(glob) {
 	};
 }
 
-const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/markdown-style-guide.mdx": () => import('../markdown-style-guide_BvGcPn83.mjs'),"/src/content/projects/Tasktracker.mdx": () => import('../Tasktracker_CRa0h6qh.mjs'),"/src/content/projects/ecom.mdx": () => import('../ecom_CXS0wLd7.mjs'),"/src/content/projects/holidaze.mdx": () => import('../holidaze_It93DSJ8.mjs')});
+const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/markdown-style-guide.mdx": () => import('../markdown-style-guide_C4ui-4HZ.mjs'),"/src/content/projects/Tasktracker.mdx": () => import('../Tasktracker_CRa0h6qh.mjs'),"/src/content/projects/ecom.mdx": () => import('../ecom_CXS0wLd7.mjs'),"/src/content/projects/holidaze.mdx": () => import('../holidaze_It93DSJ8.mjs')});
 const collectionToRenderEntryMap = createCollectionToGlobResultMap({
 	globResult: renderEntryGlob,
 	contentDir,
