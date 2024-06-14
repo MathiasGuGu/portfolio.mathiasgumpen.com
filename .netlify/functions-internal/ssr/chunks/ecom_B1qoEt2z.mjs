@@ -1,7 +1,7 @@
 import { y as Fragment, _ as __astro_tag_component__, w as createVNode } from './astro_CzQg4Qtz.mjs';
 import '@astrojs/internal-helpers/path';
-import { $ as $$Image } from './pages/generic_DlpbGyJP.mjs';
-import { $ as $$Introduction, a as $$Summary, b as $$Images } from './Introduction_C27FLj0u.mjs';
+import { $ as $$Image } from './pages/generic_PiJ5OYs6.mjs';
+import { $ as $$Introduction, a as $$Summary, b as $$Images } from './Introduction_BA2drIgH.mjs';
 import 'clsx';
 
 const image1 = new Proxy({"src":"/_astro/ecomdesktop.1m_Dz0bU.png","width":2880,"height":1800,"format":"png"}, {

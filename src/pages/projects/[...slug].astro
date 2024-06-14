@@ -24,19 +24,17 @@ const { Content } = await data.render();
 
 const imageDesktop = await getImage({
   src: data.data.image,
-  width: 2871,
-  height: 1771,
+  inferSize: true,
   format: "avif",
   loading: "eager",
-  quality: "max",
+  quality: "high",
 });
 const imageMobile = await getImage({
   src: data.data.imageMobile,
-  width: 2871,
-  height: 1771,
+  inferSize: true,
   format: "avif",
   loading: "eager",
-  quality: "max",
+  quality: "high",
 });
 ---
 

@@ -1067,4 +1067,4 @@ const generic = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   GET
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { $$Image as $, $$Picture as a, generic as b, getImage as g };
+export { $$Image as $, generic as a, getImage as g };

@@ -1,11 +1,11 @@
 import { i as createAstro, d as createComponent, g as renderTemplate, j as addAttribute, h as renderComponent, k as renderHead, l as renderTransition, n as renderSlot, y as Fragment, _ as __astro_tag_component__, w as createVNode } from './astro_CzQg4Qtz.mjs';
 import '@astrojs/internal-helpers/path';
-import { $ as $$Image } from './pages/generic_DlpbGyJP.mjs';
+import { $ as $$Image } from './pages/generic_PiJ5OYs6.mjs';
 import 'kleur/colors';
 import 'clsx';
 /* empty css                         */
 /* empty css                         */
-import { S as SITE_TITLE, a as SITE_DESCRIPTION } from './pages/__CG7ZS0Ln.mjs';
+import { S as SITE_TITLE, a as SITE_DESCRIPTION } from './pages/__BdNt1gKV.mjs';
 /* empty css                                   */
 
 const $$Astro = createAstro("https://mathiasgumpen-testsite.netlify.app/");

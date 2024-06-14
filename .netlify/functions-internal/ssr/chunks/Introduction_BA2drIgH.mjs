@@ -2,7 +2,7 @@ import { i as createAstro, d as createComponent, g as renderTemplate, m as maybe
 import 'kleur/colors';
 import 'clsx';
 import '@astrojs/internal-helpers/path';
-import { a as $$Picture } from './pages/generic_DlpbGyJP.mjs';
+import { $ as $$Image } from './pages/generic_PiJ5OYs6.mjs';
 
 const $$Astro$2 = createAstro("https://mathiasgumpen-testsite.netlify.app/");
 const $$Summary = createComponent(($$result, $$props, $$slots) => {
@@ -17,7 +17,7 @@ const $$Images = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$Images;
   const { desk1, desk2, mobile } = Astro2.props;
-  return renderTemplate`${maybeRenderHead()}<section class="w-full h-[500px] md:h-[1000px] grid grid-cols-2 grid-rows-2 gap-3"> <div class="w-full h-full col-span-2 row-span-1 p-2 md:p-12 rounded bg-imagebg border border-border"> ${renderComponent($$result, "Picture", $$Picture, { "width": 2880, "height": 1720, "formats": ["webp"], "src": desk1, "alt": "Desktop screenshot", "class": "w-full h-full object-contain overflow-hidden" })} </div> <div class="w-full h-full col-span-1 row-span-1 p-2 md:p-12 rounded bg-imagebg border border-border"> ${renderComponent($$result, "Picture", $$Picture, { "width": 2880, "height": 1720, "loading": "lazy", "formats": ["webp"], "class": "w-full h-full object-contain overflow-hidden", "src": desk2, "alt": "Desktop screenshot of 2nd page" })} </div> <div class="w-full h-full col-span-1 row-span-1 p-2 md:p-12 rounded bg-imagebg border border-border"> ${renderComponent($$result, "Picture", $$Picture, { "width": 720, "height": 1486, "formats": ["webp"], "loading": "lazy", "class": "w-full h-full object-contain overflow-hidden", "src": mobile, "alt": "Mobile screenshot of front page" })} </div> </section>`;
+  return renderTemplate`${maybeRenderHead()}<section class="w-full h-[500px] md:h-[1000px] grid grid-cols-2 grid-rows-2 gap-3"> <div class="w-full h-full col-span-2 row-span-1 p-2 md:p-12 rounded bg-imagebg border border-border"> ${renderComponent($$result, "Image", $$Image, { "inferSize": true, "format": "webp", "src": desk1, "alt": "Desktop screenshot", "class": "w-full h-full object-contain overflow-hidden" })} </div> <div class="w-full h-full col-span-1 row-span-1 p-2 md:p-12 rounded bg-imagebg border border-border"> ${renderComponent($$result, "Image", $$Image, { "inferSize": true, "loading": "lazy", "format": "webp", "class": "w-full h-full object-contain overflow-hidden", "src": desk2, "alt": "Desktop screenshot of 2nd page" })} </div> <div class="w-full h-full col-span-1 row-span-1 p-2 md:p-12 rounded bg-imagebg border border-border"> ${renderComponent($$result, "Image", $$Image, { "inferSize": true, "format": "webp", "loading": "lazy", "class": "w-full h-full object-contain overflow-hidden", "src": mobile, "alt": "Mobile screenshot of front page" })} </div> </section>`;
 }, "/Users/magugu/Documents/Developer/Noroff - Tasks, Courses, CAs/Course Assignment/portfolio/src/components/casestudy/Images.astro", void 0);
 
 const $$Astro = createAstro("https://mathiasgumpen-testsite.netlify.app/");

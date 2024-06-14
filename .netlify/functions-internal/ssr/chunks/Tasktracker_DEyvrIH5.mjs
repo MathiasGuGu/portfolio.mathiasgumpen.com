@@ -1,6 +1,6 @@
 import { i as createAstro, d as createComponent, g as renderTemplate, m as maybeRenderHead, h as renderComponent, n as renderSlot, y as Fragment, _ as __astro_tag_component__, w as createVNode } from './astro_CzQg4Qtz.mjs';
 import '@astrojs/internal-helpers/path';
-import { $ as $$Image } from './pages/generic_DlpbGyJP.mjs';
+import { $ as $$Image } from './pages/generic_PiJ5OYs6.mjs';
 import 'kleur/colors';
 import 'clsx';
 
