@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./holidaze_CX0dYsdE.mjs');
+						return import('./ecom_CXxnQyUt.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

@@ -1,7 +1,11 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import { transformerNotationDiff, transformerNotationErrorLevel, transformerMetaHighlight } from "@shikijs/transformers";
+import {
+  transformerNotationDiff,
+  transformerNotationErrorLevel,
+  transformerMetaHighlight,
+} from "@shikijs/transformers";
 import tailwind from "@astrojs/tailwind";
 
 import netlify from "@astrojs/netlify";
@@ -13,9 +17,13 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       wrap: true,
-      transformers: [transformerNotationDiff(), transformerNotationErrorLevel(), transformerMetaHighlight()]
-    }
+      transformers: [
+        transformerNotationDiff(),
+        transformerNotationErrorLevel(),
+        transformerMetaHighlight(),
+      ],
+    },
   },
   output: "server",
-  adapter: netlify()
+  adapter: netlify(),
 });
