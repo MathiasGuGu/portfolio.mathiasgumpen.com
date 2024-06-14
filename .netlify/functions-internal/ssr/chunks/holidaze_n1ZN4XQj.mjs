@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./Tasktracker_Bu1m5e3z.mjs');
+						return import('./holidaze_CDwswzFr.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

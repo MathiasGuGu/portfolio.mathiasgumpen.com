@@ -22,15 +22,15 @@ const frontmatter = {
 };
 function getHeadings() {
   return [{
-    "depth": 3,
+    "depth": 1,
     "slug": "introduction",
     "text": "Introduction"
   }, {
-    "depth": 4,
+    "depth": 2,
     "slug": "my-goals-with-tasktracker",
     "text": "My goals with Tasktracker"
   }, {
-    "depth": 5,
+    "depth": 3,
     "slug": "step-1-planning-sketches-and-wireframes",
     "text": "Step 1: Planning, Sketches and Wireframes"
   }];
@@ -39,28 +39,28 @@ const __usesAstroImage = true;
 function _createMdxContent(props) {
   const _components = {
     code: "code",
+    h1: "h1",
+    h2: "h2",
     h3: "h3",
-    h4: "h4",
-    h5: "h5",
     p: "p",
     ...props.components
   };
   return createVNode(Fragment, {
-    children: [createVNode(_components.h3, {
+    children: [createVNode(_components.h1, {
       id: "introduction",
       children: "Introduction"
     }), "\n", createVNode(_components.p, {
       children: ["Tasktracker is my take on a task tracking application. I know there are a lot out there, made by a team of professionales,\nbut sometimes you just want to make something yourself. It may be better or worse, but it’s yours.\nThe idea came from the podcast ", createVNode(_components.code, {
         children: "Syntax"
       }), " by Wes Bos and Scott Tolinski. They talked about a task list and daily task application that one of them had made.\nIt was quite intriguing to me, so I checked it out, and in my humble, honest opinion, I could do better.\nSo that is what this is. My take on a task tracking application."]
-    }), "\n", createVNode(_components.h4, {
+    }), "\n", createVNode(_components.h2, {
       id: "my-goals-with-tasktracker",
       children: "My goals with Tasktracker"
     }), "\n", createVNode(_components.p, {
       children: ["I am really bad at following a task tracker / todo list. So i needed something that would motivate me to use it.\nI have looked at multiple motivational components in different apps like, Duolingo, where they use the streak and daily rewards to motivate the user.\nAlso, if someone is actually going to use an application like this, it need to be simple.\nNo one is going to go through a 10 button process to clear one goal, or get a reward or for simply adding a task.\nIt really need to be simple, intuative and ", createVNode(_components.code, {
         children: "fun"
       }), "."]
-    }), "\n", createVNode(_components.h5, {
+    }), "\n", createVNode(_components.h3, {
       id: "step-1-planning-sketches-and-wireframes",
       children: "Step 1: Planning, Sketches and Wireframes"
     }), "\n", createVNode($$TextSplit, {

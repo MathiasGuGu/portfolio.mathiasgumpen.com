@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./ecom_DK2U0JGu.mjs');
+						return import('./ecom_D5_ega48.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

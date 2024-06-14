@@ -5,7 +5,7 @@ import 'kleur/colors';
 import 'clsx';
 /* empty css                         */
 /* empty css                         */
-import { S as SITE_TITLE, a as SITE_DESCRIPTION } from './pages/__DRFGkTK4.mjs';
+import { S as SITE_TITLE, a as SITE_DESCRIPTION } from './pages/__DuZ5VVeM.mjs';
 /* empty css                                   */
 
 const $$Astro = createAstro("https://example.com");
