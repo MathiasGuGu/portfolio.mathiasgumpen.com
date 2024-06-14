@@ -171,7 +171,7 @@ function isPropagatedAssetsModule(module) {
 
 const contentDir = '/src/content/';
 
-const contentEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/markdown-style-guide.mdx": () => import('../markdown-style-guide_Bx9_mV5k.mjs'),"/src/content/projects/Tasktracker.mdx": () => import('../Tasktracker_C4kuMrHv.mjs'),"/src/content/projects/ecom.mdx": () => import('../ecom_NvjRdok6.mjs'),"/src/content/projects/holidaze.mdx": () => import('../holidaze_CSb5L8A2.mjs')});
+const contentEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/markdown-style-guide.mdx": () => import('../markdown-style-guide_Bx9_mV5k.mjs'),"/src/content/projects/Tasktracker.mdx": () => import('../Tasktracker_C4kuMrHv.mjs'),"/src/content/projects/ecom.mdx": () => import('../ecom_OTRT_eYM.mjs'),"/src/content/projects/holidaze.mdx": () => import('../holidaze_DVkw6Li1.mjs')});
 const contentCollectionToEntryMap = createCollectionToGlobResultMap({
 	globResult: contentEntryGlob,
 	contentDir,
@@ -199,7 +199,7 @@ function createGlobLookup(glob) {
 	};
 }
 
-const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/markdown-style-guide.mdx": () => import('../markdown-style-guide_BFaw5lnt.mjs'),"/src/content/projects/Tasktracker.mdx": () => import('../Tasktracker_CKhuIrG1.mjs'),"/src/content/projects/ecom.mdx": () => import('../ecom_DfBptPJM.mjs'),"/src/content/projects/holidaze.mdx": () => import('../holidaze_CkYOxk3-.mjs')});
+const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/markdown-style-guide.mdx": () => import('../markdown-style-guide_DBZg93lm.mjs'),"/src/content/projects/Tasktracker.mdx": () => import('../Tasktracker_CKhuIrG1.mjs'),"/src/content/projects/ecom.mdx": () => import('../ecom_XyxRLIul.mjs'),"/src/content/projects/holidaze.mdx": () => import('../holidaze_BxG2Orly.mjs')});
 const collectionToRenderEntryMap = createCollectionToGlobResultMap({
 	globResult: renderEntryGlob,
 	contentDir,
