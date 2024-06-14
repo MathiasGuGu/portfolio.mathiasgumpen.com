@@ -1,7 +1,7 @@
 /* empty css                           */
 import { i as createAstro, d as createComponent, g as renderTemplate, m as maybeRenderHead, j as addAttribute, h as renderComponent } from '../astro_CzQg4Qtz.mjs';
 import 'kleur/colors';
-import { $ as $$MainLayout } from './__CFIO-PdO.mjs';
+import { $ as $$MainLayout } from './__DymT315M.mjs';
 import 'clsx';
 
 const $$Astro = createAstro("https://mathiasgumpen-testsite.netlify.app/");

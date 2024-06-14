@@ -1,5 +1,5 @@
 import rss from '@astrojs/rss';
-import { g as getCollection, S as SITE_TITLE, a as SITE_DESCRIPTION } from './__CFIO-PdO.mjs';
+import { g as getCollection, S as SITE_TITLE, a as SITE_DESCRIPTION } from './__DymT315M.mjs';
 
 async function GET(context) {
   const posts = await getCollection("blog");
