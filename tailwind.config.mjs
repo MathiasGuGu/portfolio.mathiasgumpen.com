@@ -36,5 +36,4 @@ export default {
       bold: "700",
     },
   },
-  plugins: [],
 };
