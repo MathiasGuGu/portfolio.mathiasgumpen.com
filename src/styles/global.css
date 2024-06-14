@@ -1,12 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-100: '#14141f',
-   300: '#3b3b5e',
-   400: '#4f4f7d',
-   500: '#62629d',
-*/
 
 :root {
   --text: hsl(0, 1%, 17%);

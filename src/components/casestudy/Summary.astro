@@ -1,5 +1,5 @@
 ---
-
+const { type, semester, year, shortSummary } = Astro.props;
 ---
 
 <section
@@ -8,21 +8,20 @@
   <h2 class="text-2xl font-bold">tl;dr</h2>
   <div class="flex items-center gap-12 py-2 border-b">
     <p>Type:</p>
-    <p>Project exam</p>
+    <p>{type}</p>
   </div>
   <div class="flex items-center gap-12 py-2 border-b">
     <p>Semester:</p>
-    <p>4</p>
+    <p>{semester}</p>
   </div>
   <div class="flex items-center gap-12 py-2 border-b">
     <p>Year:</p>
-    <p>2024</p>
+    <p>{year}</p>
   </div>
   <div class="flex items-center gap-12 py-2 border-b">
     <p>Short Summary:</p>
     <p>
-      A booking app where you can search for venues, book venues, see available
-      booking times with a calender and manage your own venues.
+      {shortSummary}
     </p>
   </div>
 </section>

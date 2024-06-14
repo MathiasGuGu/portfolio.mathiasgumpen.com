@@ -24,11 +24,11 @@ export default [
     link: "/projects/holidaze",
   },
   {
-    title: "FinnJobb - Job Search App",
+    title: "Ecom - Ecommerce App",
     description:
       "FinnJobb is a job search app that scrapes work data from Finn.no and makes it easier and faster for a user to unserstand what criteria they must meet to get a job.",
     image: "/blog-placeholder-3.jpg",
     imageAlt: "Project 1",
-    link: "https://www.google.com",
+    link: "/projects/ecom",
   },
 ];
