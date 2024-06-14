@@ -46,7 +46,7 @@ function createGetCollection({
       type === "content" ? contentCollectionToEntryMap[collection] : dataCollectionToEntryMap[collection]
     );
     let entries = [];
-    if (!Object.assign({"BASE_URL": "/", "MODE": "production", "DEV": false, "PROD": true, "SSR": true, "SITE": "https://example.com", "ASSETS_PREFIX": undefined}, { _: process.env._ })?.DEV && cacheEntriesByCollection.has(collection)) {
+    if (!Object.assign({"BASE_URL": "/", "MODE": "production", "DEV": false, "PROD": true, "SSR": true, "SITE": "https://mathiasgumpen-testsite.netlify.app/", "ASSETS_PREFIX": undefined}, { _: process.env._ })?.DEV && cacheEntriesByCollection.has(collection)) {
       entries = [...cacheEntriesByCollection.get(collection)];
     } else {
       const limit = pLimit(10);
@@ -188,7 +188,7 @@ createCollectionToGlobResultMap({
 });
 
 let lookupMap = {};
-lookupMap = {"blog":{"type":"content","entries":{"markdown-style-guide":"/src/content/blog/markdown-style-guide.mdx"}},"projects":{"type":"content","entries":{"holidaze":"/src/content/projects/holidaze.mdx","ecom":"/src/content/projects/ecom.mdx","tasktracker":"/src/content/projects/Tasktracker.mdx"}}};
+lookupMap = {"blog":{"type":"content","entries":{"markdown-style-guide":"/src/content/blog/markdown-style-guide.mdx"}},"projects":{"type":"content","entries":{"ecom":"/src/content/projects/ecom.mdx","tasktracker":"/src/content/projects/Tasktracker.mdx","holidaze":"/src/content/projects/holidaze.mdx"}}};
 
 function createGlobLookup(glob) {
 	return async (collection, lookupId) => {
@@ -199,7 +199,7 @@ function createGlobLookup(glob) {
 	};
 }
 
-const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/markdown-style-guide.mdx": () => import('../markdown-style-guide_zRUPezoq.mjs'),"/src/content/projects/Tasktracker.mdx": () => import('../Tasktracker_CUOVAPgf.mjs'),"/src/content/projects/ecom.mdx": () => import('../ecom_DkOL8gTS.mjs'),"/src/content/projects/holidaze.mdx": () => import('../holidaze_n1ZN4XQj.mjs')});
+const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/markdown-style-guide.mdx": () => import('../markdown-style-guide_Bnfs49zF.mjs'),"/src/content/projects/Tasktracker.mdx": () => import('../Tasktracker_BYNdpORO.mjs'),"/src/content/projects/ecom.mdx": () => import('../ecom_DvoPERDp.mjs'),"/src/content/projects/holidaze.mdx": () => import('../holidaze_TbjeNEVw.mjs')});
 const collectionToRenderEntryMap = createCollectionToGlobResultMap({
 	globResult: renderEntryGlob,
 	contentDir,
@@ -217,7 +217,7 @@ const figtree = "/_astro/figtree-latin-wght-normal.tyJnQ6lj.woff2";
 
 const sora = "/_astro/sora-latin-wght-normal.UPnOA2Rr.woff2";
 
-const $$Astro$1 = createAstro("https://example.com");
+const $$Astro$1 = createAstro("https://mathiasgumpen-testsite.netlify.app/");
 const $$BaseHead = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$BaseHead;
@@ -257,7 +257,7 @@ const $$MainLayout = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`<html lang="en" data-theme="light"> <head>${renderComponent($$result, "BaseHead", $$BaseHead, { "title": SITE_TITLE, "description": SITE_DESCRIPTION })}${renderHead()}</head> <body> ${renderComponent($$result, "Header", $$Header, {})} <main${addAttribute(renderTransition($$result, "h63idg3f"), "data-astro-transition-scope")}> ${renderSlot($$result, $$slots["default"])} </main> ${renderComponent($$result, "Footer", $$Footer, {})} </body></html>`;
 }, "/Users/magugu/Documents/Developer/Noroff - Tasks, Courses, CAs/Course Assignment/portfolio/src/layouts/MainLayout.astro", "self");
 
-const $$Astro = createAstro("https://example.com");
+const $$Astro = createAstro("https://mathiasgumpen-testsite.netlify.app/");
 async function getStaticPaths() {
   const blogEntries = await getCollection("blog");
   return blogEntries.map((entry) => ({

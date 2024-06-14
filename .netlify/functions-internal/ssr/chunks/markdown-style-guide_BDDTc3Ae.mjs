@@ -1,14 +1,14 @@
 import { i as createAstro, d as createComponent, g as renderTemplate, j as addAttribute, h as renderComponent, k as renderHead, l as renderTransition, n as renderSlot, y as Fragment, _ as __astro_tag_component__, w as createVNode } from './astro_CzQg4Qtz.mjs';
 import '@astrojs/internal-helpers/path';
-import { $ as $$Image } from './pages/generic_XoUaQcHQ.mjs';
+import { $ as $$Image } from './pages/generic_DlpbGyJP.mjs';
 import 'kleur/colors';
 import 'clsx';
 /* empty css                         */
 /* empty css                         */
-import { S as SITE_TITLE, a as SITE_DESCRIPTION } from './pages/__DuZ5VVeM.mjs';
+import { S as SITE_TITLE, a as SITE_DESCRIPTION } from './pages/__CG7ZS0Ln.mjs';
 /* empty css                                   */
 
-const $$Astro = createAstro("https://example.com");
+const $$Astro = createAstro("https://mathiasgumpen-testsite.netlify.app/");
 const $$BlogHead = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$BlogHead;

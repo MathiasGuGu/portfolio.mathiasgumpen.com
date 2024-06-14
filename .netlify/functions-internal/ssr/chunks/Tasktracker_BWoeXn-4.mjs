@@ -1,10 +1,10 @@
 import { i as createAstro, d as createComponent, g as renderTemplate, m as maybeRenderHead, h as renderComponent, n as renderSlot, y as Fragment, _ as __astro_tag_component__, w as createVNode } from './astro_CzQg4Qtz.mjs';
 import '@astrojs/internal-helpers/path';
-import { $ as $$Image } from './pages/generic_XoUaQcHQ.mjs';
+import { $ as $$Image } from './pages/generic_DlpbGyJP.mjs';
 import 'kleur/colors';
 import 'clsx';
 
-const $$Astro = createAstro("https://example.com");
+const $$Astro = createAstro("https://mathiasgumpen-testsite.netlify.app/");
 const $$TextSplit = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$TextSplit;
