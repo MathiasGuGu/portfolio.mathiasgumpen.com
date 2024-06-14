@@ -8,7 +8,7 @@ interface project {
 
 export default [
   {
-    title: "Receipt Scanner - Receipto",
+    title: "Receipto",
     description:
       "Receipto is a finance app that allows users to scan receipts and categorize their spending into custom categories and tags. Receipto allows users to track their spending and see where their money is going.",
     image: "/blog-placeholder-4.jpg",
@@ -16,7 +16,7 @@ export default [
     link: "https://www.google.com",
   },
   {
-    title: "Holidaze - Booking App",
+    title: "Holidaze ",
     description:
       "Holidaze is a booking app that allows users to book hotels and accommodations for their holidays.",
     image: "/blog-placeholder-2.jpg",
@@ -24,7 +24,7 @@ export default [
     link: "/projects/holidaze",
   },
   {
-    title: "Ecom - Ecommerce App",
+    title: "Ecom",
     description:
       "FinnJobb is a job search app that scrapes work data from Finn.no and makes it easier and faster for a user to unserstand what criteria they must meet to get a job.",
     image: "/blog-placeholder-3.jpg",

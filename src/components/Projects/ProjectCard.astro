@@ -4,25 +4,25 @@ import { Picture } from "astro:assets";
 const { title, description, imageAlt, image, link } = Astro.props;
 ---
 
-<article class="flex flex-col md:flex-row border-b border-textSecondary py-8">
-  <div class="absolute w-screen left-0"></div>
-  <Picture
+<article class="flex flex-col md:flex-row border-b border-foreground py-8">
+  <!-- <Picture
     pictureAttributes={{
       style: "backgroundColor: #f3f4f6;",
     }}
     class={"rounded-lg"}
-    width={960 / 1.5}
-    height={480 / 1.5}
+    width={960 / 2}
+    height={480 / 2}
     formats={["webp", "avif"]}
     alt={imageAlt}
     src={image}
-  />
+  /> -->
+  <div class="w-1/2 h-72 bg-green-500/10 rounded"></div>
   <div
-    class="grid grid-cols-1 grid-rows-4 pt-3 md:px-8 text-balance w-full md:w-1/2"
+    class="flex flex-col gap-4 pt-3 md:px-8 text-balance w-full md:w-1/2 relative"
   >
-    <p class="font-bold text-2xl text-text limit-w">{title}</p>
-    <p class="row-span-2 place-content-start">{description}</p>
+    <p class="font-bold text-2xl text-text font-heading">{title}</p>
+    <p class="row-span-1 place-content-start">{description}</p>
 
-    <a href={link}>Read more</a>
+    <a href={link} class="w-fit h-fit absolute bottom-6">Read more</a>
   </div>
 </article>
