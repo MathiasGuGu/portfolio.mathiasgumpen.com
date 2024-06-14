@@ -3,7 +3,7 @@ import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/MainLayout.astro";
 import Listitem from "../../components/casestudy/Listitem.astro";
-import { Picture, getImage } from "astro:assets";
+import { getImage } from "astro:assets";
 export const getStaticPaths = (async () => {
   const studies = await getCollection("projects");
   return studies.map((study) => {
