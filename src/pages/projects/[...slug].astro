@@ -3,7 +3,7 @@ import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/MainLayout.astro";
 import Listitem from "../../components/casestudy/Listitem.astro";
-import { Picture } from "astro:assets";
+import { Picture, getImage } from "astro:assets";
 export const getStaticPaths = (async () => {
   const studies = await getCollection("projects");
   return studies.map((study) => {
@@ -20,6 +20,19 @@ export const getStaticPaths = (async () => {
 
 const { data } = Astro.props;
 const { Content } = await data.render();
+
+const imageDesktop = await getImage({
+  src: data.data.image,
+  width: 2871,
+  height: 1771,
+  format: "webp",
+});
+const imageMobile = await getImage({
+  src: data.data.imageMobile,
+  width: 2871,
+  height: 1771,
+  format: "webp",
+});
 ---
 
 <MainLayout>
@@ -27,26 +40,18 @@ const { Content } = await data.render();
     class="w-full md:h-[550px] h-[300px] bg-imagebg border border-border rounded md:p-12 p-2 gap-4 flex items-center justify-center relative"
   >
     <div class="w-full h-full">
-      <Picture
-        width={2871}
-        loading={"eager"}
-        height={1771}
-        format="webp"
-        src={data.data.image}
-        alt={data.data.title + "desktop screenshot"}
-        class="rounded w-full h-full object-contain"
-      />
+      <div
+        style={`background-image: url(${imageDesktop.src})`}
+        class="w-full h-full bg-contain bg-no-repeat"
+      >
+      </div>
     </div>
     <div class="w-1/4 h-full hidden md:flex">
-      <Picture
-        width={780}
-        loading={"eager"}
-        height={1486}
-        format="webp"
-        src={data.data.imageMobile}
-        alt={data.data.title + "mobile screenshot"}
-        class="rounded"
-      />
+      <div
+        style={`background-image: url(${imageMobile.src})`}
+        class="w-full h-[95%] bg-contain bg-no-repeat"
+      >
+      </div>
     </div>
 
     <div

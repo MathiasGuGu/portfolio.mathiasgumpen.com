@@ -1,5 +1,5 @@
 ---
-import { Picture } from "astro:assets";
+import { Picture, getImage } from "astro:assets";
 const { desk1, desk2, mobile } = Astro.props;
 ---
 
@@ -12,11 +12,10 @@ const { desk1, desk2, mobile } = Astro.props;
     <Picture
       width={2880}
       height={1720}
-      loading={"lazy"}
-      format="webp"
-      class="w-full h-full object-contain"
+      formats={["webp"]}
       src={desk1}
       alt="Desktop screenshot"
+      class="w-full h-full object-contain overflow-hidden"
     />
   </div>
   <div
@@ -26,8 +25,8 @@ const { desk1, desk2, mobile } = Astro.props;
       width={2880}
       height={1720}
       loading={"lazy"}
-      format="webp"
-      class="w-full h-full object-contain"
+      formats={["webp"]}
+      class="w-full h-full object-contain overflow-hidden"
       src={desk2}
       alt="Desktop screenshot of 2nd page"
     />
@@ -38,9 +37,9 @@ const { desk1, desk2, mobile } = Astro.props;
     <Picture
       width={720}
       height={1486}
-      format="webp"
+      formats={["webp"]}
       loading={"lazy"}
-      class="w-full h-full object-contain"
+      class="w-full h-full object-contain overflow-hidden"
       src={mobile}
       alt="Mobile screenshot of front page"
     />

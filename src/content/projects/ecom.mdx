@@ -1,12 +1,14 @@
 ---
 title: "Ecom"
 description: "A fictional e-commerce site for students and teachers."
-image: "/ecomdesktop.png"
-imageMobile: "/ecommobile.png"
+image: "/src/assets/ecomdesktop.png"
+imageMobile: "/src/assets/ecommobile.png"
 githubRepo: "https://github.com"
 liveDemo: "https://gleaming-profiterole-7aa164.netlify.app/"
 ---
 
+import image1 from "../../assets/ecomdesktop.png";
+import image2 from "../../assets/ecommobile.png";
 import Summary from "../../components/casestudy/Summary.astro";
 import Images from "../../components/casestudy/Images.astro";
 import Introduction from "../../components/casestudy/Introduction.astro";
@@ -80,5 +82,5 @@ Zustand:
 
 ##### Outcome
 
-<Images desk1="/ecomdesktop.png" desk2="/ecommobile.png" mobile="/ecomdesktop.png" />
+<Images desk1={image1} desk2={image2} mobile={image1} />
 </section>

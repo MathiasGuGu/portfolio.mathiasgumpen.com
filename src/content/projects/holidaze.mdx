@@ -1,12 +1,15 @@
 ---
 title: "Holidaze"
 description: "A booking app for all alike."
-image: "/holidazefrontpage.png"
-imageMobile: "/Holidazemobile.png"
+image: "/src/assets/holidazefrontpage.png"
+imageMobile: "/src/assets/Holidazemobile.png"
 githubRepo: "https://github.com/MathiasGuGu/Holidaze"
 liveDemo: "https://bookatholidaze.netlify.app"
 ---
 
+import image from "../../assets/holidazefrontpage.png";
+import image2 from "../../assets/holidazeexplore.png";
+import image3 from "../../assets/Holidazemobile.png";
 import Summary from "../../components/casestudy/Summary.astro";
 import Images from "../../components/casestudy/Images.astro";
 import Introduction from "../../components/casestudy/Introduction.astro";
@@ -90,5 +93,5 @@ Zustand:
 
 ##### Outcome
 
-<Images desk1="/holidazefrontpage.png" desk2="/holidazeexplore.png" mobile="/Holidazemobile.png" />
+<Images desk1={image} desk2={image2} mobile={image3} />
 </section>
