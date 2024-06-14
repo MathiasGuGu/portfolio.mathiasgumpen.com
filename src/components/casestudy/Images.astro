@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+const { desk1, desk2, mobile } = Astro.props;
+---
+
+<section
+  class="w-full h-[500px] md:h-[1000px] grid grid-cols-2 grid-rows-2 gap-3"
+>
+  <div
+    class="w-full h-full col-span-2 row-span-1 p-2 md:p-12 rounded bg-imagebg border border-border"
+  >
+    <Image
+      inferSize
+      format="webp"
+      src={desk1}
+      widths={[240, 540, 720, desk1.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${desk1.width}px`}
+      alt="Desktop screenshot"
+      class="w-full h-full object-contain overflow-hidden"
+    />
+  </div>
+  <div
+    class="w-full h-full col-span-1 row-span-1 p-2 md:p-12 rounded bg-imagebg border border-border"
+  >
+    <Image
+      inferSize
+      loading={"lazy"}
+      format="webp"
+      class="w-full h-full object-contain overflow-hidden"
+      src={desk2}
+      widths={[240, 540, 720, desk2.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${desk2.width}px`}
+      alt="Desktop screenshot of 2nd page"
+    />
+  </div>
+  <div
+    class="w-full h-full col-span-1 row-span-1 p-2 md:p-12 rounded bg-imagebg border border-border"
+  >
+    <Image
+      inferSize
+      format="webp"
+      loading={"lazy"}
+      class="w-full h-full object-contain overflow-hidden"
+      src={mobile}
+      widths={[240, 540, 720, mobile.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${mobile.width}px`}
+      alt="Mobile screenshot of front page"
+    />
+  </div>
+</section>

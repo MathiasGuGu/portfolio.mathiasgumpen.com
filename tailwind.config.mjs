@@ -4,12 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        text: "var(--text)",
+        text: "var(--text-primary)",
         textSecondary: "var(--text-secondary)",
         background: "var(--background)",
-        primary: "var(--primary)",
-        secondary: "var(--secondary)",
-        accent: "var(--accent)",
+        foreground: "var(--foreground)",
+        primary: "var(--accent)",
+        border: "var(--border-color)",
+        imagebg: "var(--image-bg)",
       },
     },
     fontSize: {

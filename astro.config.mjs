@@ -8,9 +8,11 @@ import {
 } from "@shikijs/transformers";
 import tailwind from "@astrojs/tailwind";
 
+import netlify from "@astrojs/netlify";
+
 // https://astro.build/config
 export default defineConfig({
-  site: "https://example.com",
+  site: "https://mathiasgumpen-testsite.netlify.app/",
   integrations: [mdx(), sitemap(), tailwind()],
   markdown: {
     shikiConfig: {
@@ -22,4 +24,6 @@ export default defineConfig({
       ],
     },
   },
+  output: "server",
+  adapter: netlify(),
 });

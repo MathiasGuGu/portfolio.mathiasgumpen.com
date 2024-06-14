@@ -1,0 +1,90 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
+import Listitem from "../../components/casestudy/Listitem.astro";
+import { getImage } from "astro:assets";
+export const prerender = true;
+export const getStaticPaths = (async () => {
+  const studies = await getCollection("projects");
+  return studies.map((study) => {
+    return {
+      params: {
+        slug: study.slug,
+      },
+      props: {
+        data: study,
+      },
+    };
+  });
+}) satisfies GetStaticPaths;
+
+const { data } = Astro.props;
+const { Content } = await data.render();
+
+const imageDesktop = await getImage({
+  src: data.data.image,
+  inferSize: true,
+  format: "avif",
+  loading: "eager",
+  quality: "high",
+  widths: [240, 540, 720, data.data.image.width],
+  sizes: `(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${data.data.image.width}px`,
+});
+const imageMobile = await getImage({
+  src: data.data.imageMobile,
+  inferSize: true,
+
+  format: "avif",
+  loading: "eager",
+  quality: "high",
+  widths: [240, 540, 720, data.data.image.width],
+  sizes: `(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${data.data.image.width}px`,
+});
+---
+
+<MainLayout>
+  <div
+    class="w-full md:h-[550px] h-[300px] bg-imagebg border border-border rounded md:p-12 p-2 gap-4 flex items-center justify-center relative"
+  >
+    <div class="w-full h-full">
+      <div
+        style={`background-image: url(${imageDesktop.src})`}
+        class="w-full h-full bg-contain bg-no-repeat"
+      >
+      </div>
+    </div>
+    <div class="w-1/4 h-full hidden md:flex">
+      <div
+        style={`background-image: url(${imageMobile.src})`}
+        class="w-full h-[95%] bg-contain bg-no-repeat"
+      >
+      </div>
+    </div>
+
+    <div
+      class="absolute bottom-2 md:bottom-12 right-2 md:right-12 flex items-center gap-8 bg-white px-5 py-2 rounded-lg"
+    >
+      <a href={data.data.liveDemo}>View live</a>
+      <a href={data.data.githubRepo}>Github</a>
+    </div>
+  </div>
+  <div class="flex flex-col md:px-12">
+    <Content components={{ li: Listitem }} />
+  </div>
+  <style is:inline>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 1rem 0;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  </style>
+</MainLayout>

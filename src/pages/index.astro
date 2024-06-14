@@ -13,10 +13,10 @@ import BlogList from "../components/Blog/BlogList.astro";
     <div
       class="absolute top-[50px] md:top-[150px] md:left-[500px] -z-10 max-w-[calc(100%-4rem)]"
     >
-      <HeroLines color="#22c55e" />
+      <div class="art w-[600px] h-96"></div>
     </div>
     <h1 class="font-normal">
-      Hi, my name is <span class="font-bold">Mathias</span><span
+      Hi, my name is <span class="font-bold text-text">Mathias</span><span
         class="text-orange-500">.</span
       >
     </h1>
@@ -57,7 +57,7 @@ import BlogList from "../components/Blog/BlogList.astro";
       Frontend Guru
       <span class="text-green-500">.</span>
     </h2>
-    <p class="text-xl font-heading text-text">&copy; About me</p>
+    <p class="text-xl font-heading text-text mt-8">&copy; About me</p>
 
     <p class="limit-w">
       I am a 22 year old Software developer / Frontend developer from
@@ -67,7 +67,7 @@ import BlogList from "../components/Blog/BlogList.astro";
       and have worked on many projects, both personal and professional. I am an eager
       and fast learner and I am always looking for new challenges.
     </p>
-    <p class="text-xl font-heading text-text">&copy; Tech</p>
+    <p class="text-xl font-heading text-text mt-8">&copy; Tech</p>
     <p class="limit-w">
       While I have experience in many technologies and tools, I am most
       comfortable with <span class="font-bold text-text">React</span> , <span
@@ -95,3 +95,13 @@ import BlogList from "../components/Blog/BlogList.astro";
     <BlogList />
   </section>
 </MainLayout>
+
+<style is:inline>
+  .art {
+    background-color: transparent;
+    opacity: 0.8;
+    background-image: linear-gradient(#444cf720 1px, transparent 1px),
+      linear-gradient(to right, #444cf720 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+</style>

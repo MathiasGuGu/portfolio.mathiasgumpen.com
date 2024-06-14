@@ -1,0 +1,23 @@
+---
+const { ltr } = Astro.props;
+---
+
+<section class="w-full h-auto flex justify-between gap-6 mb-6">
+  {
+    ltr ? (
+      <>
+        <div class="w-1/2">
+          <slot />
+        </div>
+        <div class="w-1/2 h-72 bg-green-500/10" />
+      </>
+    ) : (
+      <>
+        <div class="w-1/2 h-72 bg-green-500/10" />
+        <div class="w-1/2">
+          <slot />
+        </div>
+      </>
+    )
+  }
+</section>
