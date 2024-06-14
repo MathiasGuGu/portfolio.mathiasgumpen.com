@@ -24,7 +24,7 @@ const { Content } = await data.render();
 
 <MainLayout>
   <div
-    class="w-full h-[550px] bg-green-500/10 rounded p-12 gap-4 flex items-center justify-center relative"
+    class="w-full md:h-[550px] h-[300px] bg-imagebg border border-border rounded md:p-12 p-2 gap-4 flex items-center justify-center relative"
   >
     <div class="w-full h-full">
       <Picture
@@ -37,7 +37,7 @@ const { Content } = await data.render();
         class="rounded w-full h-full object-contain"
       />
     </div>
-    <div class="w-1/4 h-full">
+    <div class="w-1/4 h-full hidden md:flex">
       <Picture
         width={780}
         loading={"eager"}
@@ -50,7 +50,7 @@ const { Content } = await data.render();
     </div>
 
     <div
-      class="absolute bottom-12 right-12 flex items-center gap-8 bg-white px-5 py-2 rounded-lg"
+      class="absolute bottom-2 md:bottom-12 right-2 md:right-12 flex items-center gap-8 bg-white px-5 py-2 rounded-lg"
     >
       <a href={data.data.liveDemo}>View live</a>
       <a href={data.data.githubRepo}>Github</a>
