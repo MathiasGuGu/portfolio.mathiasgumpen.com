@@ -199,7 +199,7 @@ function createGlobLookup(glob) {
 	};
 }
 
-const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/markdown-style-guide.mdx": () => import('../markdown-style-guide_DVPcBMNu.mjs'),"/src/content/projects/Tasktracker.mdx": () => import('../Tasktracker_CRa0h6qh.mjs'),"/src/content/projects/ecom.mdx": () => import('../ecom_BXiGCStd.mjs'),"/src/content/projects/holidaze.mdx": () => import('../holidaze_Chqs9mwE.mjs')});
+const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/markdown-style-guide.mdx": () => import('../markdown-style-guide_BhAOmKNk.mjs'),"/src/content/projects/Tasktracker.mdx": () => import('../Tasktracker_CRa0h6qh.mjs'),"/src/content/projects/ecom.mdx": () => import('../ecom_CXS0wLd7.mjs'),"/src/content/projects/holidaze.mdx": () => import('../holidaze_It93DSJ8.mjs')});
 const collectionToRenderEntryMap = createCollectionToGlobResultMap({
 	globResult: renderEntryGlob,
 	contentDir,

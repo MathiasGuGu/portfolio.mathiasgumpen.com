@@ -28,6 +28,8 @@ const { desk1, desk2, mobile } = Astro.props;
       format="webp"
       class="w-full h-full object-contain overflow-hidden"
       src={desk2}
+      widths={[240, 540, 720, desk2.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${desk2.width}px`}
       alt="Desktop screenshot of 2nd page"
     />
   </div>
@@ -40,6 +42,8 @@ const { desk1, desk2, mobile } = Astro.props;
       loading={"lazy"}
       class="w-full h-full object-contain overflow-hidden"
       src={mobile}
+      widths={[240, 540, 720, mobile.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${mobile.width}px`}
       alt="Mobile screenshot of front page"
     />
   </div>
