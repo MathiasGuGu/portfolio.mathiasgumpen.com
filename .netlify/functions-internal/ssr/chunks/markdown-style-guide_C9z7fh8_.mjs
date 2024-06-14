@@ -5,7 +5,7 @@ import 'kleur/colors';
 import 'clsx';
 /* empty css                         */
 /* empty css                         */
-import { S as SITE_TITLE, a as SITE_DESCRIPTION } from './pages/___JEpL0r9.mjs';
+import { S as SITE_TITLE, a as SITE_DESCRIPTION } from './pages/__CyMxq_N4.mjs';
 /* empty css                                   */
 
 const $$Astro = createAstro("https://mathiasgumpen-testsite.netlify.app/");
