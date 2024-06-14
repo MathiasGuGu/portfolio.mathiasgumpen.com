@@ -28,13 +28,18 @@ const imageDesktop = await getImage({
   format: "avif",
   loading: "eager",
   quality: "high",
+  widths: [240, 540, 720, data.data.image.width],
+  sizes: `(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${data.data.image.width}px`,
 });
 const imageMobile = await getImage({
   src: data.data.imageMobile,
   inferSize: true,
+
   format: "avif",
   loading: "eager",
   quality: "high",
+  widths: [240, 540, 720, data.data.image.width],
+  sizes: `(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${data.data.image.width}px`,
 });
 ---
 

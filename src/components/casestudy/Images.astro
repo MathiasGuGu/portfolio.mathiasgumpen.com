@@ -13,6 +13,8 @@ const { desk1, desk2, mobile } = Astro.props;
       inferSize
       format="webp"
       src={desk1}
+      widths={[240, 540, 720, desk1.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${desk1.width}px`}
       alt="Desktop screenshot"
       class="w-full h-full object-contain overflow-hidden"
     />
