@@ -1,7 +1,7 @@
 /* empty css                           */
 import { i as createAstro, d as createComponent, g as renderTemplate, m as maybeRenderHead, j as addAttribute, h as renderComponent } from '../astro_CzQg4Qtz.mjs';
 import 'kleur/colors';
-import { $ as $$MainLayout } from './__DymT315M.mjs';
+import { $ as $$MainLayout } from './__Cfa4Dth1.mjs';
 import 'clsx';
 
 const $$Astro = createAstro("https://mathiasgumpen-testsite.netlify.app/");
@@ -48,7 +48,7 @@ const $$BlogList = createComponent(async ($$result, $$props, $$slots) => {
 }, "/Users/magugu/Documents/Developer/Noroff - Tasks, Courses, CAs/Course Assignment/portfolio/src/components/Blog/BlogList.astro", void 0);
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${renderComponent($$result, "MainLayout", $$MainLayout, {}, { "default": ($$result2) => renderTemplate`  ${maybeRenderHead()}<section class="pt-[200px] flex flex-col justify-center relative isolate text-balance"> <div class="absolute top-[50px] md:top-[150px] md:left-[500px] -z-10 max-w-[calc(100%-4rem)]"> <div class="art w-[600px] h-96"></div> </div> <h1 class="font-normal">
+  return renderTemplate`${renderComponent($$result, "MainLayout", $$MainLayout, {}, { "default": ($$result2) => renderTemplate`  ${maybeRenderHead()}<section class="pt-[200px] flex flex-col justify-center relative isolate text-balance"> <div class="absolute top-[50px] md:top-[150px] md:left-[500px] overflow-hidden -z-10 max-w-[calc(100%-4rem)]"> <div class="art w-[600px] h-96"></div> </div> <h1 class="font-normal">
 Hi, my name is <span class="font-bold text-text">Mathias</span><span class="text-orange-500">.</span> </h1> <p class="limit-w">
 I am a software engineer / frontend developer with a passion for
       performance, accessibility, and user experience.
@@ -56,23 +56,25 @@ I am a software engineer / frontend developer with a passion for
 currently working as a software developer at
 <a href="https://norkart.no" target="_blank" aria-label="Link to Norkart's website" rel="noreferer noopener" class="underline underline-offset-4 decoration-green-500">
 Norkart
-<span class="text-green-500 font-bold font-heading">.</span> </a> </p> <div class="h-auto w-24 flex flex-col gap-4 opacity-40 items-center justify-center pt-12"> <p>scroll</p> <span class="h-64 w-[1px] bg-text block"></span> </div> </section> <section class="pt-20 h-auto relative isolate bg-background"> <div class="absolute -bottom-56 md:left-[500px] -z-10 max-w-[calc(100%-4rem)]"> <div class="w-[min(600px,calc(100vw_-_2rem))] h-[364px] bg-orange-200/20 rounded hidden md:block"></div> </div> <h2>
+<span class="text-green-500 font-bold font-heading">.</span> </a> </p> <div class="h-auto w-24 flex flex-col gap-4 opacity-40 items-center justify-center pt-12"> <p>scroll</p> <span class="h-64 w-[1px] bg-text block"></span> </div> </section> <section class="pt-20 h-auto relative isolate bg-background"> <h2>
 Frontend Guru
-<span class="text-green-500">.</span> </h2> <p class="text-xl font-heading text-text mt-8">&copy; About me</p> <p class="limit-w">
+<span class="text-green-500">.</span> </h2> <div class="w-full h-[800px md:h-[600px] grid md:grid-cols-2 grid-rows-2 gap-8 md:gap-0"> <div class="p-4 border-r border-b border-[#444cf720]"> <p class="text-xl font-heading text-text mt-8">About me</p> <p class="limit-w">
 I am a 22 year old Software developer / Frontend developer from
-      Kristiansand, Norway. I have a Higher Professional Degree in Frontend
-      development and will be interning at Norkart in the summer of 2024. I have
+          Kristiansand, Norway. I have a Higher Professional Degree in Frontend
+          development and will be interning at Norkart in the summer of 2024. I
+          have
 <span class="font-bold text-text">4+ years</span> of experience with web-development
-      and have worked on many projects, both personal and professional. I am an eager
-      and fast learner and I am always looking for new challenges.
-</p> <p class="text-xl font-heading text-text mt-8">&copy; Tech</p> <p class="limit-w">
+          and have worked on many projects, both personal and professional. I am
+          an eager and fast learner and I am always looking for new challenges.
+</p> </div> <div class="w-full h-full hidden md:block"></div> <div class="w-full h-full hidden md:block"></div> <div class="p-4 border-t border-l border-[#444cf720]"> <p class="text-xl font-heading text-text mt-8">Tech</p> <p class="limit-w">
 While I have experience in many technologies and tools, I am most
-      comfortable with <span class="font-bold text-text">React</span> , <span class="font-bold text-text">TailwindCss</span>
-and <span class="font-bold text-text">Typescript</span> . I am proficient in
-      Python but choose to work with Typescript for most projects. Although most
-      of my experience is in React and Typescript/Javascript, I am a fast learner
-      and have made projects in multiple frameworks like Vue, Solid and Svelte.
-</p> </section> <section class="pt-20 mt-64"> <h3>
+          comfortable with <span class="font-bold text-text">React</span> , <span class="font-bold text-text">TailwindCss</span>
+and <span class="font-bold text-text">Typescript</span> . I am proficient
+          in Python but choose to work with Typescript for most projects. Although
+          most of my experience is in React and Typescript/Javascript, I am a fast
+          learner and have made projects in multiple frameworks like Vue, Solid and
+          Svelte.
+</p> </div> </div> </section> <section class="pt-20 mt-64"> <h3>
 Projects I have done
 <span class="text-blue-500">.</span> </h3> <p class="max-w-[min(650px,calc(100%_-_2rem))]">
 I have a lot of ideas, and I love to create things.

@@ -11,7 +11,7 @@ import BlogList from "../components/Blog/BlogList.astro";
     class="pt-[200px] flex flex-col justify-center relative isolate text-balance"
   >
     <div
-      class="absolute top-[50px] md:top-[150px] md:left-[500px] -z-10 max-w-[calc(100%-4rem)]"
+      class="absolute top-[50px] md:top-[150px] md:left-[500px] overflow-hidden -z-10 max-w-[calc(100%-4rem)]"
     >
       <div class="art w-[600px] h-96"></div>
     </div>
@@ -45,39 +45,42 @@ import BlogList from "../components/Blog/BlogList.astro";
     </div>
   </section>
   <section class="pt-20 h-auto relative isolate bg-background">
-    <div
-      class="absolute -bottom-56 md:left-[500px] -z-10 max-w-[calc(100%-4rem)]"
-    >
-      <div
-        class="w-[min(600px,calc(100vw_-_2rem))] h-[364px] bg-orange-200/20 rounded hidden md:block"
-      >
-      </div>
-    </div>
     <h2>
       Frontend Guru
       <span class="text-green-500">.</span>
     </h2>
-    <p class="text-xl font-heading text-text mt-8">&copy; About me</p>
-
-    <p class="limit-w">
-      I am a 22 year old Software developer / Frontend developer from
-      Kristiansand, Norway. I have a Higher Professional Degree in Frontend
-      development and will be interning at Norkart in the summer of 2024. I have
-      <span class="font-bold text-text">4+ years</span> of experience with web-development
-      and have worked on many projects, both personal and professional. I am an eager
-      and fast learner and I am always looking for new challenges.
-    </p>
-    <p class="text-xl font-heading text-text mt-8">&copy; Tech</p>
-    <p class="limit-w">
-      While I have experience in many technologies and tools, I am most
-      comfortable with <span class="font-bold text-text">React</span> , <span
-        class="font-bold text-text">TailwindCss</span
-      >
-      and <span class="font-bold text-text">Typescript</span> . I am proficient in
-      Python but choose to work with Typescript for most projects. Although most
-      of my experience is in React and Typescript/Javascript, I am a fast learner
-      and have made projects in multiple frameworks like Vue, Solid and Svelte.
-    </p>
+    <div
+      class="w-full h-[800px md:h-[600px] grid md:grid-cols-2 grid-rows-2 gap-8 md:gap-0"
+    >
+      <div class="p-4 border-r border-b border-[#444cf720]">
+        <p class="text-xl font-heading text-text mt-8">About me</p>
+        <p class="limit-w">
+          I am a 22 year old Software developer / Frontend developer from
+          Kristiansand, Norway. I have a Higher Professional Degree in Frontend
+          development and will be interning at Norkart in the summer of 2024. I
+          have
+          <span class="font-bold text-text">4+ years</span> of experience with web-development
+          and have worked on many projects, both personal and professional. I am
+          an eager and fast learner and I am always looking for new challenges.
+        </p>
+      </div>
+      <div class="w-full h-full hidden md:block"></div>
+      <div class="w-full h-full hidden md:block"></div>
+      <div class="p-4 border-t border-l border-[#444cf720]">
+        <p class="text-xl font-heading text-text mt-8">Tech</p>
+        <p class="limit-w">
+          While I have experience in many technologies and tools, I am most
+          comfortable with <span class="font-bold text-text">React</span> , <span
+            class="font-bold text-text">TailwindCss</span
+          >
+          and <span class="font-bold text-text">Typescript</span> . I am proficient
+          in Python but choose to work with Typescript for most projects. Although
+          most of my experience is in React and Typescript/Javascript, I am a fast
+          learner and have made projects in multiple frameworks like Vue, Solid and
+          Svelte.
+        </p>
+      </div>
+    </div>
   </section>
 
   <section class="pt-20 mt-64">
